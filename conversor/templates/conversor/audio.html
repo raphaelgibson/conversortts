@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Conversor TTS {% endblock %}
+
+{% block content %}
+
+<div class="gerado">
+	{% for audio in audios %}
+	<h2>Nome do arquivo: {{audio.nome}}.mp3</h2><br>
+	<h2>Texto convertido em áudio:</h2>
+	<p class="text">&nbsp;&nbsp; {{audio.texto}}</p>
+	<a href="audio/{{audio.id}}/download"><p class="baixar">Baixar áudio</p></a>
+	{% endfor %}
+</div>
+
+{% endblock %}

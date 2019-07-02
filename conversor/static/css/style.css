@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	width: 100%;
+}
+
+/* Cabeçalho */
+
+.topo{
+	box-sizing: border-box;
+	width: 100%;
+	height: 75px;
+	background-color: rgb(50, 50, 50);
+	padding: 20px 530px
+}
+
+.topo a{
+	text-decoration: none;
+}
+
+.topo a p{
+	font-size: 25px;
+	font-weight: bold;
+	color: rgb(50, 255, 50);
+	 
+}
+
+/* Página Inicial */
+
+.expo{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	margin-right: 400px;
+	font-size: 20px;
+
+}
+
+.formu{
+	margin-left: 50px;
+}
+
+.formu h2{
+	margin-bottom: 10px;
+}
+
+
+.ger{
+	margin-left: 45px;
+}
+
+.gerado{
+	margin-left: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.gerado p{
+	margin-left: 15px;
+	margin-right: 700px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+	font-size: 18px;
+}
+
+.gerado a{
+	text-decoration: none;
+}
+
+p.text{
+	border: 3px solid blue;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.baixar{
+	width: 110px;
+	background-color: rgb(50, 50, 50);
+	border: 1px solid blue;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	color: rgb(50, 255, 50);
+	
+}
+
+/* Rodapé */
+
+footer{
+	box-sizing: border-box;
+	height: 300px;
+	background-color: rgb(0, 100, 200);
+	margin: 40px auto;
+	padding: 120px 530px;
+	text-align: center;
+}
+
+footer p{
+	line-height: 15px;
+}
+

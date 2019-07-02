@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<title>{% block title %}{% endblock %}</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	
+	</head>
+	
+	<body>
+
+		<div class="topo">
+			<a href="">
+				<p class="nome">Conversor Text-To-Speech</p>
+			</a>
+		</div>
+
+		{% block content %}{% endblock %}
+
+	</body>
+
+	<footer>
+		
+		<p>Desenvolvido por: Raphael Gibson</p>
+		<h2>Conversor Text-To-Speech</h2>
+		<p>2019</p>
+
+	</footer>
+
+</html>
