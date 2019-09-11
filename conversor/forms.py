@@ -5,5 +5,4 @@ class AudioForm(forms.ModelForm):
 
 	class Meta:
 		model = Audio
-		fields = ('nome', 'texto')
-			
+		fields = '__all__'

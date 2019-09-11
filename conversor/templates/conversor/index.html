@@ -1,20 +1,24 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %} Conversor TTS {% endblock %}
 
 {% block content %}
 	
-<p class="expo">Este conversor TTS gera um arquivo de áudio baseado no texto digitado e o disponibiliza para download no formato MP3.</p>
+<p class="explicacao">Este conversor de texto para áudio gera um arquivo de áudio baseado no texto digitado e o disponibiliza para download no formato MP3.</p>
 
 <div>
-	
-	<div class="formu">
-		<h2>Texto a ser convertido:</h2>
-		<form method="POST">
-			{% csrf_token %}
-			{{ form.as_p }}
-			<a class="ger" href="audio/{{audio.id}}"><input type="submit" value="Gerar áudio"></a>
-		</form>
+	<div class="container formu">
+		<div class="row">
+			<div class="col-xs-4">
+				<h2>Texto a ser convertido:</h2>
+				<form method="POST" autocomplete="off">
+					{% csrf_token %}
+					{{form|crispy}}
+					<input class="gerar" type="submit" value="Gerar áudio">
+				</form>
+			</div>
+		</div>
 	</div>
 
 </div>

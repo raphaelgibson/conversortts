@@ -4,106 +4,141 @@
 }
 
 html, body{
-	width: 100%;
+	height: 100%;
 }
 
 /* Cabeçalho */
 
 .topo{
-	box-sizing: border-box;
 	width: 100%;
-	height: 75px;
 	background-color: rgb(50, 50, 50);
-	padding: 20px 530px
+	padding: 20px;
+	border-bottom: 4px solid rgb(50, 255, 50);
 }
 
-.topo a{
+.topo a:hover{
 	text-decoration: none;
 }
 
-.topo a p{
-	font-size: 25px;
+.nome{
+	box-sizing: border-box;
+	border: 5px outset;
+	padding: 1%;
+	margin: 0 auto;
+	width: 60%;
+	font-size: 30px;
 	font-weight: bold;
+	font-style: italic;
 	color: rgb(50, 255, 50);
-	 
+	text-align: center;
+	letter-spacing: 15px;
 }
 
-/* Página Inicial */
+.nome:hover{
+	border: 5px inset;
+}
 
-.expo{
-	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-left: 50px;
-	margin-right: 400px;
+
+/* Página inicial */
+
+.explicacao{
+	margin-top: 2.5%;
+	margin-right: 50%;
+	margin-bottom: 2.5%;
+	margin-left: 7.5%;
 	font-size: 20px;
 
 }
 
-.formu{
-	margin-left: 50px;
+/* Formulário principal */
+
+div.col-xs-4{
+	display: inline-table;
+	width: 30vw;
 }
 
-.formu h2{
-	margin-bottom: 10px;
+/* Botão que gera o áudio */
+
+.gerar{
+	background-color: rgb(50, 50, 50);
+	color: rgb(50, 255, 50);
+	border: 2px solid;
+	border-radius: 20px;
+	padding: 8px;
+	cursor: pointer;
 }
 
-
-.ger{
-	margin-left: 45px;
+.gerar:hover{
+	border: 4px solid;;
 }
 
-.gerado{
-	margin-left: 50px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+.visualizacao{
+	margin-left: 4%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
 }
 
-.gerado p{
-	margin-left: 15px;
-	margin-right: 700px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+.visualizacao p{
+	margin-top: 1%;
+	margin-right: 55%;
+	margin-bottom: 1.5%;
+	margin-left: 1.5%;
+	padding: 5px;
+	border-left: 3px solid rgb(50, 255, 50);
+	border-bottom: 2px solid rgb(50, 255, 50);
 	text-align: left;
 	font-size: 18px;
 }
 
-.gerado a{
+.visualizacao a:hover{
 	text-decoration: none;
 }
 
-p.text{
-	border: 3px solid blue;
-	border-radius: 5px;
-	padding: 5px;
-	margin-top: 10px;
-	margin-bottom: 20px;
+audio {
+	margin-left: 1%;
 }
 
-.baixar{
-	width: 110px;
-	background-color: rgb(50, 50, 50);
-	border: 1px solid blue;
-	border-radius: 5px;
-	padding-left: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-align: center;
-	color: rgb(50, 255, 50);
-	
+#download{
+	border: none;
+	margin-left: 1%;
+	font-size: 16px;
 }
+
+span.botao{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 1%;
+	font-size: 16px;
+	background-color: rgb(50, 50, 50);
+	color: rgb(50, 255, 50);
+	border: 2px solid;
+	border-radius: 20px;
+	padding: 8px;
+	text-align: center;
+}
+
+span.botao:hover{
+	border: 4px solid;
+}
+
 
 /* Rodapé */
 
 footer{
 	box-sizing: border-box;
-	height: 300px;
-	background-color: rgb(0, 100, 200);
-	margin: 40px auto;
-	padding: 120px 530px;
+	background-color: black;
+	position: relative;
+	margin: 5% auto;
+	padding: 7% 35%;
 	text-align: center;
+	margin-bottom: 0px;
 }
 
 footer p{
 	line-height: 15px;
+	color: gray;
 }
 
+footer h2{
+	color: gray;
+}
